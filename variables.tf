@@ -1,6 +1,6 @@
 variable "records" {
   description = "The records to be created for digital ocean"
-  type        = list(object({
+  type = list(object({
     create_domain     = optional(bool, false)
     record_type       = string
     record_name       = string
