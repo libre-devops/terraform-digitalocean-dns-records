@@ -54,4 +54,10 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_domain_id"></a> [domain\_id](#output\_domain\_id) | The domain id if created |
+| <a name="output_domain_ttl"></a> [domain\_ttl](#output\_domain\_ttl) | The domain ttl if created |
+| <a name="output_domain_urn"></a> [domain\_urn](#output\_domain\_urn) | The domain urn if created |
+| <a name="output_record_fqdn"></a> [record\_fqdn](#output\_record\_fqdn) | FQDN of each record |
+| <a name="output_record_id"></a> [record\_id](#output\_record\_id) | Id of each record |
