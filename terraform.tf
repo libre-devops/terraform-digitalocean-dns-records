@@ -5,6 +5,4 @@ terraform {
       source = "digitalocean/digitalocean"
     }
   }
-  backend "local" {
-  }
 }

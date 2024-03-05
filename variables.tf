@@ -1,19 +1,17 @@
-variable "location" {
-  description = "The location for this resource to be put in"
-  type        = string
-}
-
-variable "name" {
-  type        = string
-  description = "The name of the VNet gateway"
-}
-
-variable "rg_name" {
-  description = "The name of the resource group, this module does not create a resource group, it is expecting the value of a resource group already exists"
-  type        = string
-}
-
-variable "tags" {
-  type        = map(string)
-  description = "A map of the tags to use on the resources that are deployed with this module."
+variable "records" {
+  description = "The records to be created for digital ocean"
+  type        = list(object({
+    create_domain     = optional(bool, false)
+    record_type       = string
+    record_name       = string
+    record_value      = string
+    domain_name       = string
+    domain_ip_address = optional(string)
+    port              = optional(number)
+    priority          = optional(number)
+    weight            = optional(number)
+    ttl               = optional(number)
+    flags             = optional(number)
+    tag               = optional(string)
+  }))
 }
